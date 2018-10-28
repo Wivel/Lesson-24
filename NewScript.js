@@ -45,3 +45,8 @@ function Point_6() {
         }
     }
 }
+
+function add_CSS() {
+    let elem        = document.getElementById('elem');
+    elem.style.cssText = 'color: red; font-size: 30px; border: none';
+}
