@@ -1,15 +1,15 @@
-#container{
+input {
     text-align: center;
 }
-#elem{
-    text-align: center;
-    margin: 0px auto;
-    font-size: 24px;
-    border-style: solid;
-    width: 400px;
-    background-color: cyan;
-    border-radius: 10px;
+
+#space {
+    height: 30px;
 }
-#space{
-    height: 60px;
+
+#container {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
 }

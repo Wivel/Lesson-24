@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Slylesheet.css">
 </head>
 <body>
-<ol id="ol"></ol>
-<br>
-<button onclick="adder()">add li</button>
+<div id="space"></div>
+<div id="container">
+    <input type="number" placeholder="Сколько добавить?" id="number_input" min="0">
+    <input type="submit" value="Добавить" onclick="add_elem()">
+    <ul type="none" id="ul"></ul>
+</div>
 </body>
 </html>
