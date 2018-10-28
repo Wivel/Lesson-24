@@ -13,3 +13,15 @@ input {
 ul {
     text-align: center;
 }
+li{
+   font-size: 20px;
+    border: groove red 1px;
+    width: 200px;
+    margin: 0px auto;
+}
+#number_input{
+    width: 150px;
+}
+#input_sub{
+    width: 80px;
+}

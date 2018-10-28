@@ -6,7 +6,11 @@ let ul      = document.getElementById('ul'),
         let li = document.createElement('li');
         str = i;
         li.innerHTML = str;
+        li.addEventListener('click',alerter);
         ul.appendChild(li);
     }
+}
 
+function alerter() {
+    alert(this.innerHTML);
 }
