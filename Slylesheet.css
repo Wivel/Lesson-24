@@ -25,3 +25,11 @@ li{
 #input_sub{
     width: 80px;
 }
+button{
+    text-align: center;
+    width: 100px;
+    margin: 0px auto;
+}
+body{
+    text-align: center;
+}
