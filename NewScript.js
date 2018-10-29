@@ -1,19 +1,19 @@
-function beforeBegin() {
-    let elem = document.getElementById('elem');
-    elem.insertAdjacentHTML('beforeBegin','<span>!!!</span>');
+function Task_1() {
+    let elem    = document.getElementById('elem'),
+        first   = elem.firstElementChild;
+    first.style.color = 'red';
 }
 
-function afterEnd() {
-    let elem = document.getElementById('elem');
-    elem.insertAdjacentHTML('afterEnd','<span>!!!</span>');
+function Task_2() {
+    let elem    = document.getElementById('elem'),
+        last    = elem.lastElementChild;
+    last.style.color = 'blue';
 }
 
-function afterBegin() {
-    let elem = document.getElementById('elem');
-    elem.insertAdjacentHTML('afterBegin','<span>!!!</span>');
-}
-
-function beforeEnd() {
-    let elem = document.getElementById('elem');
-    elem.insertAdjacentHTML('beforeEnd','<span>!!!</span>');
+function Task_3() {
+    let elem    = document.getElementById('elem'),
+        child   = elem.children;
+    for (let i = 0; i < child.length; i++) {
+        child[i].innerHTML = child[i].innerHTML + ' !!!';
+    }
 }
