@@ -1,13 +1,9 @@
-function remover() {
-    let elem = document.getElementsByTagName('ol');
-    for (let i = 0; i < elem.length; i++) {
-        let child = elem[i].children;
-        for (let z = 0; z < child.length; z++) {
-            child[z].addEventListener('click',remember);
-        }
-    }
-}
+function addElem() {
+    let
+        input       = document.getElementById('textD'),
+        newer       = input.cloneNode(false);
+    document.body.insertAdjacentHTML("beforeend", '<br>');
+    document.body.insertAdjacentHTML("beforeend", '<br>');
+    input.parentElement.appendChild(newer);
 
-function remember() {
-    this.parentElement.removeChild(this);
 }
