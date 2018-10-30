@@ -1,19 +1,13 @@
-function Task_1() {
-    let elem    = document.getElementById('elem'),
-        first   = elem.firstElementChild;
-    first.style.color = 'red';
-}
-
-function Task_2() {
-    let elem    = document.getElementById('elem'),
-        last    = elem.lastElementChild;
-    last.style.color = 'blue';
-}
-
-function Task_3() {
-    let elem    = document.getElementById('elem'),
-        child   = elem.children;
-    for (let i = 0; i < child.length; i++) {
-        child[i].innerHTML = child[i].innerHTML + ' !!!';
+function remover() {
+    let elem = document.getElementsByTagName('ol');
+    for (let i = 0; i < elem.length; i++) {
+        let child = elem[i].children;
+        for (let z = 0; z < child.length; z++) {
+            child[z].addEventListener('click',remember);
+        }
     }
+}
+
+function remember() {
+    this.parentElement.removeChild(this);
 }
